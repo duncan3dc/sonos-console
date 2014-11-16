@@ -3,6 +3,7 @@
 
 namespace duncan3dc\Sonos\Console;
 
+use duncan3dc\Sonos\Network;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Finder\Finder;
 
@@ -22,5 +23,7 @@ foreach ($finder as $file) {
 }
 
 $sonos->addCommands($commands);
+
+Network::$cache = true;
 
 $sonos->run();
