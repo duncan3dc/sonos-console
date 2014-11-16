@@ -6,6 +6,10 @@ php:
   - 5.6
   - hhvm
 
+install:
+  - composer self-update
+  - composer update
+
 script:
   - ./tests/lint.sh
   - ./bin/sonos
