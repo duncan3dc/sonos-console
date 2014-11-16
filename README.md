@@ -18,3 +18,14 @@ Once you have the source code, the console application can be run from the root 
 ```
 
 This will list all available commands.
+
+
+Help
+----
+
+All commands have help available via the -h/--help option or the help command itself:
+```
+./bin/sonos network:get-rooms -h
+./bin/sonos network:get-rooms --help
+./bin/sonos help network:get-rooms
+```
