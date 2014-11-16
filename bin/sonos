@@ -9,7 +9,7 @@ use Symfony\Component\Finder\Finder;
 
 require __DIR__ . "/../vendor/autoload.php";
 
-$sonos = new Application("Sonos Console", "0.0.2");
+$sonos = new Application("Sonos Console", "0.0.3");
 
 $commands = [];
 $path = realpath(__DIR__ . "/../src");
