@@ -8,6 +8,7 @@ php:
 
 script:
   - ./tests/lint.sh
+  - ./bin/sonos
 
 git:
   depth: 5
