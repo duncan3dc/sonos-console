@@ -2,9 +2,8 @@
     "name": "duncan3dc/sonos-console",
     "description": "Sonos Console",
     "require": {
-        "duncan3dc/sonos": ">=0.8.6",
-        "symfony/console": "~2.5.6",
-        "symfony/finder": "~2.5.6",
+        "duncan3dc/console": "~0.1.0",
+        "duncan3dc/sonos": "~0.8.6",
         "php": ">=5.5.0"
     },
     "autoload": {

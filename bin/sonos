@@ -3,26 +3,14 @@
 
 namespace duncan3dc\Sonos\Console;
 
+use duncan3dc\Console\Application;
 use duncan3dc\Sonos\Network;
-use Symfony\Component\Console\Application;
-use Symfony\Component\Finder\Finder;
 
 require __DIR__ . "/../vendor/autoload.php";
 
-$sonos = new Application("Sonos Console", "0.0.3");
+$sonos = new Application("Sonos Console", "0.0.4");
 
-$commands = [];
-$path = realpath(__DIR__ . "/../src");
-$finder = (new Finder)->files()->in($path)->name("/[A-Z].*Command.php/");
-foreach ($finder as $file) {
-    $filename = $file->getRealPath();
-    $filename = str_replace($path, "", $filename);
-    $filename = str_replace(".php", "", $filename);
-    $class = __NAMESPACE__ . str_replace("/", "\\", $filename);
-    $commands[] = new $class;
-}
-
-$sonos->addCommands($commands);
+$sonos->loadCommands(__DIR__ . "/../commands", __NAMESPACE__);
 
 Network::$cache = true;
 
