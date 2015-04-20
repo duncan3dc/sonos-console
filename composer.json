@@ -13,6 +13,10 @@
     "require": {
         "duncan3dc/console": "^0.5.0",
         "duncan3dc/sonos": "~1.0",
+        "react/event-loop": "^0.4",
+        "react/http": "^0.7",
+        "react/socket": "^0.8",
+        "react/stream": "^0.7",
         "php": "^5.6|^7.0"
     },
     "require-dev": {

@@ -12,4 +12,6 @@ $sonos = new Application("Sonos Console", "0.0.5");
 
 $sonos->loadCommands(__DIR__ . "/../commands", __NAMESPACE__);
 
+$sonos->setDefaultCommand("main");
+
 $sonos->run();
