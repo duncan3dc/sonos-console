@@ -3,7 +3,7 @@
     "description": "Sonos Console",
     "require": {
         "duncan3dc/console": "~0.1.0",
-        "duncan3dc/sonos": "~0.8.6",
+        "duncan3dc/sonos": "~1.0",
         "php": ">=5.5.0"
     },
     "autoload": {

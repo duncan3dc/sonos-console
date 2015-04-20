@@ -8,10 +8,8 @@ use duncan3dc\Sonos\Network;
 
 require __DIR__ . "/../vendor/autoload.php";
 
-$sonos = new Application("Sonos Console", "0.0.4");
+$sonos = new Application("Sonos Console", "0.0.5");
 
 $sonos->loadCommands(__DIR__ . "/../commands", __NAMESPACE__);
-
-Network::$cache = true;
 
 $sonos->run();
