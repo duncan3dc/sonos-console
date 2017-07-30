@@ -20,8 +20,12 @@ install:
   - composer update $COMPOSER_OPTS
 
 script:
-  - ./tests/lint.sh
-  - ./bin/sonos
+  - vendor/bin/phpunit --coverage-clover=clover.xml
+  - tests/lint.sh
+  - bin/sonos
+
+after_success:
+  - vendor/bin/coveralls
 
 git:
   depth: 5
