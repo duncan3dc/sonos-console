@@ -6,14 +6,27 @@ use duncan3dc\Sonos\Network;
 
 class Command extends \duncan3dc\Console\Command
 {
-    protected $network;
+    /** @var Network */
+    private $network;
 
-    public function setNetwork(Network $network)
+    /**
+     * Set a specific sonos network instance to use.
+     *
+     * @param Network $network
+     *
+     * @return void
+     */
+    public function setNetwork(Network $network): void
     {
         $this->network = $network;
     }
 
-    public function getNetwork()
+    /**
+     * Get the sonos network instance to use.
+     *
+     * @return Network
+     */
+    public function getNetwork(): Network
     {
         if ($this->network === null) {
             $this->network = new Network;
