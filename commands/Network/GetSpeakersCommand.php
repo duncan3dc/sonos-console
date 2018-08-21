@@ -3,8 +3,8 @@
 namespace duncan3dc\Sonos\Console\Network;
 
 use duncan3dc\Sonos\Console\Command;
+use duncan3dc\SymfonyCLImate\Output;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
 
 class GetSpeakersCommand extends Command
 {
@@ -19,7 +19,7 @@ HELP
 );
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function command(InputInterface $input, Output $output)
     {
         $sonos = $this->getNetwork();
         $speakers = $sonos->getSpeakers();

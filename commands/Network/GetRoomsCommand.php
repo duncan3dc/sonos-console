@@ -19,7 +19,7 @@ HELP
 );
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function command(InputInterface $input, Output $output)
     {
         $sonos = $this->getNetwork();
         $speakers = $sonos->getSpeakers();
