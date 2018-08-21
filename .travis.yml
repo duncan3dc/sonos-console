@@ -21,8 +21,8 @@ script:
   - vendor/bin/phpunit
   - vendor/bin/composer-require-checker
   - vendor/bin/phpstan analyse --level=max src commands tests
-  - bin/sonos
   - vendor/bin/phpcbf --standard=PSR1,PSR2,PSR12 src commands tests
+  - bin/sonos
 
 jobs:
   include:

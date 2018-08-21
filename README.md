@@ -30,3 +30,15 @@ All commands have help available via the -h/--help option or the help command it
 ./bin/sonos network:get-rooms --help
 ./bin/sonos help network:get-rooms
 ```
+
+
+Changelog
+---------
+A [Changelog](CHANGELOG.md) has been available since version 0.1.0
+
+
+Where to get help
+-----------------
+Found a bug? Got a question? Just not sure how something works?  
+Please [create an issue](//github.com/duncan3dc/sonos-console/issues) and I'll do my best to help out.  
+Alternatively you can catch me on [Twitter](https://twitter.com/duncan3dc)
