@@ -18,6 +18,8 @@
     "require-dev": {
         "maglnet/composer-require-checker": "^1.0",
         "mockery/mockery": "^1.1",
+        "phpstan/phpstan": "^0.10.3",
+        "phpstan/phpstan-mockery": "^0.10.1",
         "phpunit/phpunit": "^7.3"
     },
     "autoload": {

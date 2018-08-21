@@ -3,8 +3,8 @@
 namespace duncan3dc\Sonos\Console\Network;
 
 use duncan3dc\Sonos\Console\Command;
+use duncan3dc\SymfonyCLImate\Output;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
 
 class GetRoomsCommand extends Command
 {
