@@ -5,8 +5,9 @@ namespace duncan3dc\Sonos\ConsoleTests;
 use duncan3dc\Sonos\Console\Command;
 use duncan3dc\Sonos\Network;
 use Mockery;
+use PHPUnit\Framework\TestCase;
 
-class CommandTest extends \PHPUnit_Framework_TestCase
+class CommandTest extends TestCase
 {
 
     public function tearDown()
