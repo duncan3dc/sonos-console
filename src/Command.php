@@ -30,7 +30,7 @@ class Command extends \duncan3dc\Console\Command
     public function getNetwork(): NetworkInterface
     {
         if ($this->network === null) {
-            $this->network = new Network;
+            $this->network = new Network();
         }
 
         return $this->network;

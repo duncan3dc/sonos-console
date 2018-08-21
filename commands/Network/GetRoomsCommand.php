@@ -16,7 +16,7 @@ class GetRoomsCommand extends Command
 This command is useful if you only have one speaker per room,
 otherwise network:get-speakers might be more useful.
 HELP
-);
+        );
     }
 
     protected function command(InputInterface $input, Output $output)

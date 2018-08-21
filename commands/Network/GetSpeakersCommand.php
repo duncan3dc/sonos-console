@@ -16,7 +16,7 @@ class GetSpeakersCommand extends Command
 List all available speakers, and which room name they have assigned.
 If you only have one speaker per room then network:get-rooms might be more useful
 HELP
-);
+        );
     }
 
     protected function command(InputInterface $input, Output $output)
