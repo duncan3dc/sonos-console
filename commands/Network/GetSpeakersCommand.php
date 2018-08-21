@@ -24,8 +24,8 @@ HELP
         $sonos = $this->getNetwork();
         $speakers = $sonos->getSpeakers();
         foreach ($speakers as $speaker) {
-            $output->info()->inline("* {$speaker->name}");
-            $output->comment(" (" . $speaker->room . ")");
+            $output->info()->inline("* " . $speaker->getName());
+            $output->comment(" (" . $speaker->getRoom() . ")");
         }
     }
 }

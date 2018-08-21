@@ -3,7 +3,7 @@
 namespace duncan3dc\Sonos\ConsoleTests;
 
 use duncan3dc\Sonos\Console\Command;
-use duncan3dc\Sonos\Network;
+use duncan3dc\Sonos\Interfaces\NetworkInterface;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -22,13 +22,13 @@ class CommandTest extends TestCase
 
         $result = $command->getNetwork();
 
-        $this->assertInstanceOf(Network::class, $result);
+        $this->assertInstanceOf(NetworkInterface::class, $result);
     }
 
 
     public function testSetNetwork()
     {
-        $network = Mockery::mock(Network::class);
+        $network = Mockery::mock(NetworkInterface::class);
 
         $command = new Command("phpunit:test");
 

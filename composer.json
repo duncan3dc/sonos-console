@@ -12,7 +12,7 @@
     }],
     "require": {
         "duncan3dc/console": "^1.1",
-        "duncan3dc/sonos": "~1.0",
+        "duncan3dc/sonos": "^2.0",
         "php": "^7.1"
     },
     "require-dev": {

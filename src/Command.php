@@ -2,21 +2,22 @@
 
 namespace duncan3dc\Sonos\Console;
 
+use duncan3dc\Sonos\Interfaces\NetworkInterface;
 use duncan3dc\Sonos\Network;
 
 class Command extends \duncan3dc\Console\Command
 {
-    /** @var Network */
+    /** @var NetworkInterface */
     private $network;
 
     /**
      * Set a specific sonos network instance to use.
      *
-     * @param Network $network
+     * @param NetworkInterface $network
      *
      * @return void
      */
-    public function setNetwork(Network $network): void
+    public function setNetwork(NetworkInterface $network): void
     {
         $this->network = $network;
     }
@@ -24,9 +25,9 @@ class Command extends \duncan3dc\Console\Command
     /**
      * Get the sonos network instance to use.
      *
-     * @return Network
+     * @return NetworkInterface
      */
-    public function getNetwork(): Network
+    public function getNetwork(): NetworkInterface
     {
         if ($this->network === null) {
             $this->network = new Network;
